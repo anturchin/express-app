@@ -2,66 +2,79 @@
 	{
 		  "title": "Things Fall Apart",
 		  "author": "Chinua Achebe",
-		  "price": 1958
+		  "price": 1958,
+		  "id": 1
 	},
 	{
 		  "title": "Fairy tales",
 		  "author": "Hans Christian Andersen",
-		  "price": 1836
+		  "price": 1836,
+		  "id": 2
 	},
 	{
 		  "title": "The Divine Comedy",
 		  "author": "Dante Alighieri",
-		  "price": 1315
+		  "price": 1315,
+		  "id": 3
 	},
 	{
 		  "title": "The Epic Of Gilgamesh",
 		  "author": "Unknown",
-		  "price": 1700
+		  "price": 1700,
+		  "id": 4
 	},
 	{
 		  "title": "The Book Of Job",
 		  "author": "Unknown",
-		  "price": 600
+		  "price": 600,
+		  "id": 5
 	},
 	{
 		  "title": "One Thousand and One Nights",
 		  "author": "Unknown",
-		  "price": 1200
+		  "price": 1200,
+		  "id": 6
 	},
 	{
 		  "title": "Njál's Saga",
 		  "author": "Unknown",
-		  "price": 1350
+		  "price": 1350,
+		  "id": 7
 	},
 	{
 		  "title": "Pride and Prejudice",
 		  "author": "Jane Austen",
-		  "price": 1813
+		  "price": 1813,
+		  "id": 8
 	},
 	{
 		  "title": "Le Père Goriot",
 		  "author": "Honoré de Balzac",
-		  "price": 1835
+		  "price": 1835,
+		  "id": 9
 	},
 	{
 		  "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
 		  "author": "Samuel Beckett",
-		  "price": 1952
+		  "price": 1952,
+		  "id": 10
 	},
 	{
 		  "title": "The Decameron",
 		  "author": "Giovanni Boccaccio",
-		  "price": 1351
+		  "price": 1351,
+		  "id": 11
 	},
 	{
 		  "title": "Ficciones",
 		  "author": "Jorge Luis Borges",
-		  "price": 1965
+		  "price": 1965,
+		  "id": 12
 	},
 	{
 		  "title": "Wuthering Heights",
 		  "author": "Emily Brontë",
-		  "price": 1847
+		  "price": 1847,
+		  "id": 13
 	}
 ]

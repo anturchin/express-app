@@ -9,16 +9,16 @@
 			<li><a href="/">home</a></li>
 			{{/if}}
 
-			{{#if isCustomers}}
-			<li class="active"><a href="/customers">customers</a></li>
-			{{else}}
-			<li><a href="/customers">customers</a></li>
-			{{/if}}
-
 			{{#if isAbout}}
 			<li class="active"><a href="/about">about</a></li>
 			{{else}}
 			<li><a href="/about">about</a></li>
+			{{/if}}
+
+			{{#if isCustomers}}
+			<li class="active"><a href="/customers">customers</a></li>
+			{{else}}
+			<li><a href="/customers">customers</a></li>
 			{{/if}}
 
 			{{#if isAddCustomer}}
@@ -31,6 +31,12 @@
 			<li class="active"><a href="/books-store">books-store</a></li>
 			{{else}}
 			<li><a href="/books-store">books-store</a></li>
+			{{/if}}
+
+			{{#if isCart}}
+			<li class="active"><a href="/cart">cart</a></li>
+			{{else}}
+			<li><a href="/cart">cart</a></li>
 			{{/if}}
 
 		</ul>

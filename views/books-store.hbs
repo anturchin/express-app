@@ -11,7 +11,10 @@
 				<span class="card-title">price: {{price}}</span>
 			</div>
 			<div class="card-action">
-				<button class="btn btn waves-effect waves-light red lighten-2">buy</button>
+				<form action="/cart/add" method="post">
+					<input type="hidden" name="{{id}}">
+					<button type="submit" class="btn btn waves-effect waves-light red lighten-2">buy</button>
+				</form>
 			</div>
 		</div>
 	</div>
