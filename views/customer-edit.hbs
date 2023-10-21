@@ -1,0 +1,30 @@
+<h1>edit {{title}} </h1>
+
+<form action="/customers/edit" method="post">
+	<div class="input-field col s6">
+		<input placeholder="name" name="name" id="name" type="text" value="{{name}}" class="validate" required>
+		<label for="name"></label>
+		<span class="helper-text" data-error="enter name"></span>
+	</div>
+	<div class="input-field col s6">
+		<input placeholder="phone" name="phone" id="text" type="text" value="{{phone}}" class="validate" required>
+		<label for="phone"></label>
+		<span class="helper-text" data-error="enter phone"></span>
+	</div>
+	<div class="input-field col s6">
+		<input placeholder="email" name="email" id="email" type="text" value="{{email}}" class="validate" required>
+		<label for="email"></label>
+		<span class="helper-text" data-error="enter email"></span>
+	</div>
+	<div class="input-field col s6">
+		<textarea name="text" id="text" class="materialize-textarea" data-length="120">
+			{{text}}
+		</textarea>
+		<label for="text">message</label>
+	</div>
+
+	<input type="hidden" name="id" value="{{customerID}}">
+
+	<button class="btn btn-primary">edit</button>
+
+</form>

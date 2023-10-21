@@ -1,3 +1,26 @@
 .nav-wrapper {
 	padding: 0 1rem;
 }
+
+.customer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.customer__name {
+	margin-bottom: 2rem;
+}
+
+.customer__phone {
+	margin-bottom: 2rem;
+}
+
+.customer__email {
+	margin-bottom: 2rem;
+}
+
+.customer__text {
+	font-size: 2rem;
+}
