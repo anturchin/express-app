@@ -1,0 +1,22 @@
+<h1>books-store</h1>
+
+{{#if booksList.length}}
+<div class="row">
+	{{#each booksList}}
+	<div class="col s6 m6">
+		<div class="card teal lighten-2">
+			<div class="card-content white-text">
+				<span class="card-title">title: {{title}}</span>
+				<span class="card-title">author: <strong>{{author}}</strong></span>
+				<span class="card-title">price: {{price}}</span>
+			</div>
+			<div class="card-action">
+				<button class="btn btn waves-effect waves-light red lighten-2">buy</button>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</div>
+{{else}}
+<p>the list is empty</p>
+{{/if}}

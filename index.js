@@ -6,6 +6,7 @@ const homeRoutes = require('./routes/home');
 const customersRoutes = require('./routes/customers');
 const aboutRoutes = require('./routes/about');
 const customerRoutes = require('./routes/add-customer');
+const booksRoutes = require('./routes/books-store');
 
 const PORT = process.env.PORT || 5000;
 
@@ -29,6 +30,7 @@ app.use('/', homeRoutes);
 app.use('/customers', customersRoutes);
 app.use('/about', aboutRoutes);
 app.use('/add-customer', customerRoutes);
+app.use('/books-store', booksRoutes);
 
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
