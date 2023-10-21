@@ -2,10 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const homeRoutes = require('./routes/home');
+const aboutRoutes = require('./routes/about');
+const contactsRoutes = require('./routes/contacts');
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+app.use(cors());
 
 const hbs = exphbs.create({
 	defaultLayout: 'main',
@@ -17,32 +22,9 @@ app.set('view engine', 'hbs');
 app.set('views', 'views');
 
 app.use(express.static('public'));
-
-app.use(cors());
-
-app.get('/', (req, res) => {
-	res.status(200);
-	res.render('index', {
-		title: 'home',
-		isHome: true,
-	});
-});
-
-app.get('/about', (req, res) => {
-	res.status(200);
-	res.render('about', {
-		title: 'about',
-		isAbout: true,
-	});
-});
-
-app.get('/contacts', (req, res) => {
-	res.status(200);
-	res.render('contacts', {
-		title: 'contacts',
-		isContacts: true,
-	});
-});
+app.use('/', homeRoutes);
+app.use('/about', aboutRoutes);
+app.use('/contacts', contactsRoutes);
 
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
