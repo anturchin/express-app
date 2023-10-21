@@ -2,7 +2,7 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
 
-class FeedBack {
+class Customers {
 	constructor(name, phone, email, text) {
 		this.name = name;
 		this.phone = phone;
@@ -20,7 +20,7 @@ class FeedBack {
 	}
 
 	async save() {
-		const feedback = await FeedBack.getAll();
+		const feedback = await Customers.getAll();
 		feedback.push(this.getFeedBackPerson());
 		return new Promise((res, rej) => {
 			fs.writeFile(
@@ -57,4 +57,4 @@ class FeedBack {
 
 }
 
-module.exports = FeedBack;
+module.exports = Customers;

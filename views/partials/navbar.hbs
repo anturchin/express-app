@@ -9,16 +9,22 @@
 			<li><a href="/">home</a></li>
 			{{/if}}
 
+			{{#if isCustomers}}
+			<li class="active"><a href="/customers">customers</a></li>
+			{{else}}
+			<li><a href="/customers">customers</a></li>
+			{{/if}}
+
 			{{#if isAbout}}
 			<li class="active"><a href="/about">about</a></li>
 			{{else}}
 			<li><a href="/about">about</a></li>
 			{{/if}}
 
-			{{#if isFeedback}}
-			<li class="active"><a href="/feedback">feedback</a></li>
+			{{#if isAddCustomer}}
+			<li class="active"><a href="/add-customer">add-customer</a></li>
 			{{else}}
-			<li><a href="/feedback">feedback</a></li>
+			<li><a href="/add-customer">add-customer</a></li>
 			{{/if}}
 
 		</ul>

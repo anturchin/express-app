@@ -3,8 +3,9 @@ const cors = require('cors');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const homeRoutes = require('./routes/home');
+const customersRoutes = require('./routes/customers');
 const aboutRoutes = require('./routes/about');
-const feedbackRoutes = require('./routes/feedback');
+const customerRoutes = require('./routes/add-customer');
 
 const PORT = process.env.PORT || 5000;
 
@@ -25,8 +26,9 @@ app.set('views', 'views');
 
 app.use(express.static('public'));
 app.use('/', homeRoutes);
+app.use('/customers', customersRoutes);
 app.use('/about', aboutRoutes);
-app.use('/feedback', feedbackRoutes);
+app.use('/add-customer', customerRoutes);
 
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));

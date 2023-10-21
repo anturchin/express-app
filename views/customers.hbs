@@ -1,0 +1,23 @@
+<h1>customers</h1>
+
+{{#if customerList.length}}
+<div class="row">
+	{{#each customerList}}
+	<div class="col s6 m6">
+		<div class="card teal lighten-2">
+			<div class="card-content white-text">
+				<span class="card-title">{{name}}</span>
+				<span class="card-title">{{phone}}</span>
+				<span class="card-title">{{email}}</span>
+				<span class="card-title">{{text}}</span>
+			</div>
+			<div class="card-action">
+				<a href="/customers/{{id}}">open page</a>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</div>
+{{else}}
+<p>the list is empty</p>
+{{/if}}
