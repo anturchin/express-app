@@ -1,0 +1,26 @@
+<nav>
+	<div class="nav-wrapper">
+		<a href="/" class="brand-logo">express-app</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+
+			{{#if isHome}}
+			<li class="active"><a href="/">home</a></li>
+			{{else}}
+			<li><a href="/">home</a></li>
+			{{/if}}
+
+			{{#if isAbout}}
+			<li class="active"><a href="/about">about</a></li>
+			{{else}}
+			<li><a href="/about">about</a></li>
+			{{/if}}
+
+			{{#if isContacts}}
+			<li class="active"><a href="/contacts">contacts</a></li>
+			{{else}}
+			<li><a href="/contacts">contacts</a></li>
+			{{/if}}
+
+		</ul>
+	</div>
+</nav>

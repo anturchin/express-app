@@ -16,16 +16,32 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 
+app.use(express.static('public'));
+
 app.use(cors());
 
 app.get('/', (req, res) => {
 	res.status(200);
-	res.render('index');
+	res.render('index', {
+		title: 'home',
+		isHome: true,
+	});
 });
 
 app.get('/about', (req, res) => {
 	res.status(200);
-	res.render('about');
+	res.render('about', {
+		title: 'about',
+		isAbout: true,
+	});
+});
+
+app.get('/contacts', (req, res) => {
+	res.status(200);
+	res.render('contacts', {
+		title: 'contacts',
+		isContacts: true,
+	});
 });
 
 
