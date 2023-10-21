@@ -1,4 +1,5 @@
 const { Router } = require("express");
+const FeedBack = require('../models/feedback');
 const router = Router();
 
 router.get('/', (req, res) => {
@@ -9,8 +10,10 @@ router.get('/', (req, res) => {
 	});
 });
 
-router.post('/', (req, res) => {
-	console.log(req.body);
+router.post('/', async (req, res) => {
+	const { name, phone, email, text } = req.body;
+	const feedback = new FeedBack(name, phone, email, text)
+	await feedback.save();
 	res.redirect('/');
 })
 
